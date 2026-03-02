@@ -1,36 +1,40 @@
+// Desafio 01
+// Meta de Vendas
 
-//atividade 1
+let bolosVendidos = 35;
+let metaDiaria = 30;
 
-let vendidos = 35;
-let meta = 30;
-
-if (vendidos > meta) {
-    console.log ("Ela superou a meta.")
-}
-else if (vendidos == meta) {
-    console.log ("Ela antigiu exatamente a meta!")
-}
-else {
-    console.log ("Ela não antigiu a meta.")
-}
-
-//atividade 2
-
-let valorpedido = 180;
-let clientevip = true;
-
-if (valorpedido > 200 || clientevip == true){
-    console.log("Cliente tem direito ao frete grátis.")
-}
-else {
-    console.log ("Cliente não tem direito ao frete grátis.")
+if (bolosVendidos > metaDiaria) {
+    console.log("Bolos Vendidos: " + bolosVendidos);
+    console.log("Meta Diária: " + metaDiaria);
+    console.log ("A Meta Foi Superada! \n");
+} else if (bolosVendidos === metaDiaria) {
+    console.log("Bolos Vendidos: " + bolosVendidos);
+    console.log("Meta Diária: " + metaDiaria);
+    console.log ("Meta Atingida. \n");
+} else {
+    console.log("Bolos Vendidos: " + bolosVendidos);
+    console.log("Meta Diária: " + metaDiaria);
+    console.log ("Meta Não Atingida. \n");
 }
 
+// Desafio 02
+// Frete Grátis
+
+let valorPedido = 180;
+const clienteVip = true;
+
+if (valorPedido > 200 || 
+        clienteVip){
+    console.log("O cliente tem direito ao frete grátis! \n");
+} else {
+    console.log ("O cliente não tem direito ao frete grátis. \n");
+}
 
 // Desafio 03
 // Desconto Especial
 
-const valorServico = 779;
+let valorServico = 500;
 const desconto = 10;
 const clienteAntigo = true;
 
@@ -49,7 +53,10 @@ if(valorServico >= 500 &&
     console.log("Agradecemos a Preferência! \n");
 
 } else {
-    console.log("Valor Serviço: R$ " + valorServico);
+
+    valorFinal = valorServico;
+
+    console.log("Valor Serviço: R$ " + valorFinal);
     console.log("Obrigado e Volte Sempre! \n");
 }
 
@@ -76,5 +83,3 @@ if(horarioDisponivel &&
     console.log("Agendar Consulta");
     console.log("Paciente Não Cadastrado. \n");
 }
-
-
