@@ -74,5 +74,3 @@ while (sessao_atual <= total_sessoes) {
     sessao_atual++;
 }
 console.log('Total de 4 sessões inicializada e terminadas com sucesso!')
- 
- 
